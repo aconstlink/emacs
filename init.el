@@ -10,6 +10,9 @@
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
 (require 'use-package)
 (setq use-package-always-ensure t)
 
