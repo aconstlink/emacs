@@ -16,6 +16,8 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+;; Prevent undo tree files from polluting your git repo
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 (add-to-list 'load-path "~/.emacs.d/custom/")
 (add-to-list 'load-path "~/.emacs.d/c-ide/")
 (add-to-list 'load-path "~/.emacs.d/py-ide/")
@@ -38,8 +40,8 @@
 ;; C/C++
 ;;(require 'setup-cmake-ide)
 (require 'setup-realgud)
-(require 'setup-helm)
-(require 'setup-helm-gtags)
+;;(require 'setup-helm)
+;;(require 'setup-helm-gtags)
 ;;(require 'setup-ggtags)
 ;;(require 'setup-company)
 (require 'setup-c)

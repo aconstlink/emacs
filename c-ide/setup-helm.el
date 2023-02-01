@@ -1,7 +1,7 @@
 (use-package helm
   :ensure t)
 (require 'helm)
-(require 'helm-config)
+;;(require 'helm-config)
 
 ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
 ;; Changed to "C-c h". Note: We must set "C-c h" globally, because we
